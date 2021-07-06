@@ -9,13 +9,14 @@ import (
 )
 
 func main() {
+	var STACK_LENGTH = 10
 	babbler := babble.NewBabbler()
 	babbler.Count = 1
 
 	stacks := []string{}
 
 	for {
-		if len(stacks) >= 10 {
+		if len(stacks) >= STACK_LENGTH {
 			break
 		}
 
